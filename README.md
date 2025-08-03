@@ -198,7 +198,7 @@ spec:
       containers:
       - name: demo-app
         image: demo-app:1.0.0
-        imagePullPolicy: Never  # Use local image
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
           name: http
